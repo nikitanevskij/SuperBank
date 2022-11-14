@@ -1,0 +1,45 @@
+.sidebar__container {
+}
+
+.sidebar__button {
+  width: 255px;
+  font-size: 11px;
+  color: white;
+  background-color: black;
+  margin: 10px 0 10px 18px;
+  border-radius: 4px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar__button:active {
+  background: #2588e3;
+}
+.sidebar__credits {
+  overflow: auto;
+  max-height: 500px;
+}
+.credit {
+  cursor: pointer;
+  height: 67px;
+
+  border-top: 1px solid #e0e0e0;
+}
+.credit.active {
+  background: url('../../assets/Rectangle.png') right no-repeat;
+}
+.credit__name {
+  padding-top: 16px;
+  padding-left: 18px;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+
+.credit__date {
+  padding-left: 18px;
+  font-size: 11px;
+  color: #949494;
+}

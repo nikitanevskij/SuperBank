@@ -1,0 +1,71 @@
+.active__title {
+  font-weight: 700;
+  font-size: 36px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 23px;
+}
+
+form div {
+  display: inline-block;
+}
+form div input {
+  width: 99%;
+  min-height: 36px;
+  font-size: 14px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  margin-top: 3px;
+  padding-left: 1%;
+}
+
+form div input:focus {
+  border: 1px solid #2588e3;
+}
+form div:nth-child(1) {
+  margin-top: 21px;
+  width: 100%;
+}
+
+form div:nth-child(2) {
+  width: 460px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+form div:nth-child(3) {
+  width: 460px;
+  margin-top: 25px;
+}
+form div:nth-child(4) {
+  width: 460px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+form div:nth-child(5) {
+  width: 460px;
+  margin-top: 25px;
+}
+form div:nth-child(6) {
+  width: 460px;
+  margin-top: 25px;
+}
+
+.button {
+  display: block;
+  margin-top: 30px;
+  width: 126px;
+  height: 36px;
+  border: none;
+  background: #2588e3;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:active {
+  background: black;
+}
+
+.button.add {
+  width: 200px;
+}
