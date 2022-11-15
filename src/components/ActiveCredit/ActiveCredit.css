@@ -60,6 +60,7 @@ form div:nth-child(6) {
   border-radius: 4px;
   color: white;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .button:active {
@@ -68,4 +69,8 @@ form div:nth-child(6) {
 
 .button.add {
   width: 200px;
+}
+
+.container__button {
+  display: flex;
 }

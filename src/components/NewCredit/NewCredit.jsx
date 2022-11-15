@@ -1,14 +1,16 @@
 import React from 'react';
-import axios from 'axios';
+import { useAppDispatch } from '../../redux/store';
+import { fetchADDCredit } from '../../redux/fetchCreditSlice';
 
-function NewCredit({ addCredit }) {
+function NewCredit() {
+  const dispatch = useAppDispatch();
   const baseCredit = {
-    name: '',
-    minAmount: '',
-    maxAmount: '',
-    minTerm: '',
-    maxTerm: '',
-    rate: '',
+    name: 'credit',
+    minAmount: '1',
+    maxAmount: '1',
+    minTerm: '1',
+    maxTerm: '1',
+    rate: '1',
   };
 
   const [credit, setCredit] = React.useState(baseCredit);
@@ -21,8 +23,7 @@ function NewCredit({ addCredit }) {
         return;
       }
     }
-    axios.post('http://localhost:3001/lists', credit).then(({ data }) => addCredit(data));
-    setCredit(baseCredit);
+    dispatch(fetchADDCredit(credit));
   };
 
   return (
